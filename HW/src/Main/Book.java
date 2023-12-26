@@ -1,7 +1,7 @@
 package Main;
 
 public class Book {
-    private String id;
+    private int id;
     private String title;
     private String[] category;
     private String author;
@@ -10,7 +10,7 @@ public class Book {
 
     public Book(){
     }
-    public Book(String id, String title, String[] category, String author, int page_number, int release_year){
+    public Book(int id, String title, String[] category, String author, int page_number, int release_year){
         this.id=id;
         this.title=title;
         this.category=category;
@@ -19,11 +19,11 @@ public class Book {
         this.release_year=release_year;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
